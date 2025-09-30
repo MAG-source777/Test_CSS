@@ -1,0 +1,214 @@
+/* Base overrides */
+#Base {
+    min-height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #f5f5f5 !important;
+    padding: 20px !important;
+}
+
+.App__App {
+    background: white !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    position: relative !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    /* Logo header styling */
+    background-image: linear-gradient(to bottom, #001d9b 120px, white 120px) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+}
+
+.App__App::before {
+    content: '' !important;
+    display: block !important;
+    height: 80px !important;
+    background-image: url('https://mag-source777.github.io/Test_CSS/image.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 20px 0 !important;
+}
+
+.App__Flex {
+    padding: 0 2rem 2rem !important;
+}
+
+.App__Flex {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Form Header */
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header h1 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Form Fields */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-bottom: 20px !important;
+}
+
+tr {
+    margin-bottom: 1rem !important;
+}
+
+th {
+    text-align: left !important;
+    padding: 12px 10px !important;
+    color: #555 !important;
+    font-weight: 500 !important;
+    width: 40% !important;
+    vertical-align: middle !important;
+}
+
+td {
+    padding: 12px 10px !important;
+    vertical-align: middle !important;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="date"] {
+    width: 100% !important;
+    padding: 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    background-color: white !important;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    outline: none !important;
+    border-color: #007bff !important;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25) !important;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #007bff !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s !important;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3 !important;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed !important;
+}
+
+/* Required Field Text */
+.label-required {
+    color: #666 !important;
+    font-size: 0.875rem !important;
+    text-align: left !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+
+/* Required Field Indicator */
+.required label::after {
+    content: '*' !important;
+    color: #dc3545 !important;
+    margin-left: 4px !important;
+}
+
+/* Form specific overrides */
+form {
+    margin-bottom: 20px !important;
+}
+
+/* Fix spacing issues */
+tr:last-child td {
+    padding-bottom: 0 !important;
+}
+
+/* Better input spacing */
+td .text {
+    margin: 0 !important;
+}
+
+/* Security Badge */
+.security-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.security-badge img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+/* Required Field Indicator */
+.required label::after {
+    content: '*';
+    color: #dc3545;
+    margin-left: 4px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .form-table tr {
+        display: table-row;
+    }
+
+    .form-table th {
+        display: table-cell;
+        width: 40%;
+        padding: 12px 10px;
+        vertical-align: middle;
+    }
+
+    .form-table td {
+        display: table-cell;
+        width: 60%;
+        padding: 12px 10px;
+    }
+
+    .submit-button {
+        width: auto;
+    }
+}
+
+/* Security Badge */
+.security-badge {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.security-badge img {
+    max-width: 100px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .payment-form {
+        padding: 1.5rem;
+    }
+}
